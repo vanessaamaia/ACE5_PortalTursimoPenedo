@@ -1,0 +1,12 @@
+body {
+  min-height: 100vh; /* Use min-height para evitar colapso */
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
