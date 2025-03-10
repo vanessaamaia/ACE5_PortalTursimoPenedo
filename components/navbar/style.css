@@ -9,12 +9,12 @@ a {
 }
 
 .navbar {
+  max-width: 1625px;
+  margin: 0 auto;
   height: 105px;
-  background: #E6F2FB;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
