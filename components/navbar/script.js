@@ -1,4 +1,5 @@
 const currentPage = window.location.pathname;
+
 $(document).ready(function () {
   $('#navbar-container').load('/components/navbar/index.html', function () {
     document.querySelectorAll(".navbar .navbar-items a").forEach(link => {
