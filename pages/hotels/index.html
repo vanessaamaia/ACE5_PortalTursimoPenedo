@@ -22,21 +22,21 @@
     <!--import navbar-->
     <div id="navbar-container"></div>
     <div class="main-container">
-      <h1>Hello, World</h1>
+      <div class="card-container" id = "Title1" image = "https://placehold.co/600x400/3388EE/FFFFFF/" rating = ""></div>
+      <div class="card-container" id = "Title2" image = "https://placehold.co/600x400/3388EE/FFFFFF/" rating = ""></div>
+      <div class="card-container" id = "Title3" image = "https://placehold.co/600x400/3388EE/FFFFFF/" rating = ""></div>
     </div>
 
-    <div class="cardContainer" id = "Title1" image = "https://placehold.co/600x400/3388EE/FFFFFF/" rating = ""></div>
-    <div class="cardContainer" id = "Title2" image = "https://placehold.co/600x400/3388EE/FFFFFF/" rating = ""></div>
-    <div class="cardContainer" id = "Title3" image = "https://placehold.co/600x400/3388EE/FFFFFF/" rating = ""></div>
 
     <!--import scripts-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/../../components/navbar/script.js"></script>
+
     
     <!--scripts-->
     <script type="module">
       import { generateCards } from '/../../components/content_card/script.js';
-      generateCards()
+      generateCards();
     </script>
   </body>
 </html>

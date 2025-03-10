@@ -249,8 +249,8 @@ main {
   }
 }
 .splide__arrow--prev {
-  left: -3rem;
+  left: -3rem !important;
 }
 .splide__arrow--next {
-  right: -3rem;
+  right: -3rem !important;
 }

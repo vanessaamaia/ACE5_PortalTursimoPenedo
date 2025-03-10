@@ -28,13 +28,18 @@ function generateStars(rating) {
     return starsHtml;
 }
 
-function generateCards(){
-    const cardContainers = document.querySelectorAll(".cardContainer");
+export function generateCards(){
+    const cardContainers = document.querySelectorAll(".card-container");
     cardContainers.forEach(container => {
         const image = container.getAttribute("image");
         const title = container.getAttribute("id");
-        const rating = container.getAttribute("rating");
+        const rating = parseFloat(container.getAttribute("rating"));
         
         const cardElement = createCard(image, title, rating);
+        
+        // às vezes essa linha abaixo buga e aparece dois cartões, mas talvez seja erro no meu lado ao dar muito refresh na página
+        container.appendChild(cardElement);
     });
+    return;
 }
+
