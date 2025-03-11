@@ -205,27 +205,27 @@ main {
 .slide-widget-1 {
   grid-column: 1 / span 3;
   grid-row: span 1;
-  background-image: url('../images/inicio/penedo-wide.png');
+  background-image: url('../../img/home/inicio/penedo-wide.png');
 }
 .slide-widget-2 {
   grid-column: span 1;
   grid-row: span 1;
-  background-image: url('../images/inicio/convento.png');
+  background-image: url('../../img/home/inicio/convento.png');
 }
 .slide-widget-3 {
   grid-column: 1 / span 1;
   grid-row: span 1;
-  background-image: url('../images/inicio/porto-balsa.png');
+  background-image: url('../../img/home/inicio/porto-balsa.png');
 }
 .slide-widget-4 {
   grid-column: 2 / span 2;
   grid-row: span 1;
-  background-image: url('../images/inicio/sao-gonsalo.png');
+  background-image: url('../../img/home/inicio/sao-gonsalo.png');
 }
 .slide-widget-5 {
   grid-column: span 1;
   grid-row: span 1;
-  background-image: url('../images/inicio/rua.png');
+  background-image: url('../../img/home/inicio/rua.png');
 }
 
 

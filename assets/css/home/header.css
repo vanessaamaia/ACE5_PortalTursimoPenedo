@@ -1,0 +1,31 @@
+header {
+  background-color: var(--bg-light);
+  box-shadow: var(--shadow-xsmall);
+  padding: 10px 0;
+
+  & section {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  & .logo-img {
+    height: 60px;
+  }
+
+  & ul {
+    gap: var(--font-size-large);
+  }
+
+  & li a {
+    font-family: var(--font-roboto);
+    color: var(--text-dark);
+    font-weight: var(--font-weight-semibold);
+    &:hover {
+      color: var(--primary);
+    }
+  }
+
+  & li a.active {
+    color: var(--primary);
+  }
+}
