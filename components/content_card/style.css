@@ -1,0 +1,27 @@
+.card {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.stars {
+    color: gold;
+    font-size: 16px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Penedo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./components/navbar/style.css">
+</head>
+
+<body>
+
+    <div id="navbar-container"></div>
+
+    <div class="map-container">
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Pesquise um local..." />
+            <button onclick="searchLocation()">🔍</button>
+        </div>
+
+        <iframe id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63261.064293052765!2d-36.6119!3d-10.2874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x702b97d13b21767%3A0xa21b2a2c857b3d0!2sPenedo%2C%20AL!5e0!3m2!1spt-BR!2sbr!4v0000000000000&zoom=17"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <script>
+        function searchLocation() {
+            let query = document.getElementById("search").value;
+            if (!query) return;
+
+            let encodedQuery = encodeURIComponent(query + ", Penedo, Alagoas, Brasil");
+
+            document.getElementById("map").src =
+                `https://www.google.com/maps/embed/v1/place?key=AIzaSyCpJCXqQOFdgJs3TJZJ1m-ZSptlTJh-8vI&q=${encodedQuery}&zoom=17`;
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            console.log("jQuery está carregado");
+            $('#navbar-container').load('./components/navbar/index.html', function (response, status, xhr) {
+                if (status == "error") {
+                    console.log("Erro ao carregar navbar: " + xhr.status + " " + xhr.statusText);
+                } else {
+                    console.log("Navbar carregada com sucesso");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
